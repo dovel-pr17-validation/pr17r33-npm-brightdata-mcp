@@ -1,0 +1,17 @@
+[
+  {
+    "title": "Test Research - GitHub repository file",
+    "query": "Get the README file from facebook/react repository on GitHub",
+    "runs": 1,
+    "model": "gpt-5-mini-2025-08-07",
+    "provider": "openai",
+    "expectedToolCalls": ["search_scrapers", "run_scraper"],
+    "selectedServers": ["research-server"],
+    "advancedConfig": {
+      "instructions": "You are a research assistant",
+      "temperature": 0.1,
+      "maxSteps": 10,
+      "toolChoice": "auto"
+    }
+  }
+]
